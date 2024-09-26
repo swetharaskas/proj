@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-compatible"content="IE=edge">
+<meta  name="viewport"content="width=device-width, initial-scale=1.0" >
+<head>
+  
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: rgb(219, 219, 219);
+        }
+        h1{
+            font-size: x-large;
+            color:rgb(140, 48, 202);
+            word-spacing:4px;
+            text-align:left;
+            margin:0 30px;
+            padding: 35px;
+
+        }
+        .img1{
+            border-radius: 15px 30px 15px 25px;
+            width:300px;
+            height:200px;
+            border-color: black;
+            border-width: 4px;
+         }
+         .container{
+            width:100%;
+            min-height: 100vh;
+            padding-left: 8%;
+            padding-right: 8%;
+            overflow:hidden;
+            box-sizing:border-box;
+         }
+         .navbar {
+            width: 100%;
+            display: flex;
+            align-items:center;
+         }
+         .menu{
+            width: 35px;
+            cursor:pointer;
+            margin-left:20px;
+            
+         }
+         nav{
+            flex:1;
+            text-align: right;
+         }
+         nav ul li{
+            list-style-type:none;
+            display:inline-block;
+            margin-right:30px;
+         }
+         nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-size: medium;
+         }
+         nav ul li a:hover{
+            color: deeppink;
+         }
+         .row{
+            
+            justify-content:space-around;
+            align-items: center;
+            margin:100px 20px;
+         }
+         .col-1{
+            flex-basis: 40%;
+            position: relative;
+            margin-left: 50px;
+           
+         }
+         .col-1 p{
+            font-size: larger;
+            margin:30px 0 0 0 0;
+            word-spacing: 5px;
+            color:red;
+            
+         }
+         .overlay {
+          position: absolute;
+          top:0;
+          bottom: 0;
+         left: 0;
+         right: 0;
+        height: 100%;
+        width: 100%;
+       opacity: 0;
+       transition: .5s ease;
+        background-color: #fbddef;
+     }
+     .container1{
+        position: relative;
+        flex:1;
+        text-align: center;
+     }
+
+     .container1:hover .overlay {
+     opacity: 1;
+    }
+   .image{
+    width:50%;
+    height:50%;
+    border-radius: 10px 15px;
+   }
+   h2{
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 3px;
+    font-size: x-large;
+    color:#000;
+   }
+   .image1{
+    width:30%;
+    height:40%;
+    border-radius: 15px 10px 15px;
+    margin:0 10px;
+   }
+   .image2{
+    width:30%;
+    height:40%;
+    border-radius: 15px 10px 15px;
+    margin:0 10px;
+   }
+   .image3{
+    width:30%;
+    border-radius: 15px 10px 15px;
+    margin:0 10px;
+   }
+   .overlay1 {
+          position: absolute;
+          top:0;
+          bottom: 0;
+         left: 0;
+         right: 0;
+        height: 100%;
+        width: 100%;
+       opacity: 0;
+       transition: .5s ease;
+        background-color: #fbddef;
+     }
+     .container2{
+        
+        flex:1;
+        text-align: left;
+        margin:0 25px;
+      
+     }
+
+     .container2 ul li{
+      font-size: x-large;
+      word-spacing: 4px;
+      align-items: left;
+      list-style-type:circle;
+      padding:20pxx;
+     }
+     .container3{
+      font-size: x-large;
+      font-weight: 100;
+     }
+    .container3 ol li{
+        margin:0 25px;
+    }
+    @media only screen and (max-width:700px) {
+      nav ul{
+         width:100%;
+         background:linear-gradient(#de6413,#57c4ff8e);
+         position:absolute;
+         top:75px;
+         right:0;
+         z-index:2;
+      }
+      nav ul li{
+         display:block;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+      nav ul li a{
+         color:rgb(219, 219, 219);
+      }
+      .menu{
+         display: block;
+      }
+      #menulist{
+         overflow: hidden;
+         transition: 0.5s;
+      }
+      .col-1{
+          font-size: 10px;
+          text-align: top;
+          text-align: center;
+          display:contents;
+      }
+      
+    }
+    </style>
+   </head>
+   <body>
+    <div class="container">
+        <div class ="navbar">
+   <nav>
+      <ul id="menulist">
+        <li> <a href="">Browse</a></li>
+        <li> <a href="">Favourites</a></li>
+        <li> <a href="">Tools Used</a></li>
+      </ul>
+   </nav>
+      <img src="https://www.svgrepo.com/show/343285/side-menu.svg" class="menu" onclick="togglemenu()">
+       </div>
+    <h1>Tutorial Four Demonstration</h1>
+  <div class="container1">
+    <img src="https://images.pexels.com/photos/5083711/pexels-photo-5083711.jpeg?auto=compress&cs=tinysrgb&w=600" class="image">
+    <div class="overlay">
+    <div class="row">
+       <div class="col-1">
+         <p>R.Swetha </p><br>
+         <p>----First Experience with CSS----</p><br>
+         <p>CSS saves time as code written is reused mutiple times.</p><br>
+         <p>Using Css is fun which is more interesting.</p><br>
+         <p>I like exploring more & more Css while developing web application. </p>
+       </div>
+    </div>
+   </div>
+</div> 
+<div >
+       
+      <br><br> <h2> Favourite Drinks </h2><br
+    </div>
+</div>
+<div class="container2">
+   <ul>
+      <li>Juices</li>
+      <li>Coffee</li>
+      <li>Milk</li>
+   </ul>
+    <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=600" class="image1">
+    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" class="image2">
+    <img src="https://images.pexels.com/photos/5946755/pexels-photo-5946755.jpeg?auto=compress&cs=tinysrgb&w=600" class="image3">
+     
+    </div>
+ </div>
+ <!-------------------------------->
+<div class="container3">
+   <h2>Favourite Items</h2><br><br>
+   <ol>
+      <li>South Indian Meals</li>
+      <li> Chicken Biryani</li>
+      <li>Mutton Curry</li>
+   </ol>
+</div>
+<script>
+ var menulist=document.getElementById("menulist");
+ menulist.style.maxHeight="0px"
+ function togglemenu(){
+   if(menulist.style.maxHeight=="0px"){
+      menulist.style.maxHeight="130px";
+   }
+   else{
+      menulist.style.maxHeight="0px";
+   }
+ }
+</script>
+</body>
